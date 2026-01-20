@@ -1,7 +1,7 @@
 package com.acme.catalog.application
 
 import com.acme.catalog.domain.Product
-import com.acme.catalog.infrastructure.ProductRepository
+import com.acme.catalog.domain.ProductRepository
 import com.acme.catalog.infrastructure.contract.dto.CreateProductRequest
 import org.springframework.stereotype.Service
 
