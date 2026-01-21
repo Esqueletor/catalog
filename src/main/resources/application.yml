@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: catalog
+  mongodb:
+    host: catalog-mongo
+    database: catalog
+    port: 27017
