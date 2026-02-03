@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":domain"))
+    implementation(project(":catalog-domain"))
     testImplementation(kotlin("test"))
 }

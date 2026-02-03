@@ -11,8 +11,8 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation(project(":domain"))
-    implementation(project(":application"))
+    implementation(project(":catalog-domain"))
+    implementation(project(":catalog-application"))
 
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 
