@@ -7,6 +7,7 @@ plugins {
 	id("org.springframework.boot") version "4.0.1" apply false
 	id("io.spring.dependency-management") version "1.1.7" apply false
 	jacoco
+	id("org.openapi.generator") version "7.6.0" apply false
 }
 
 group = "com.acme"
@@ -14,6 +15,7 @@ version = "0.0.1-SNAPSHOT"
 
 allprojects {
 	repositories {
+		gradlePluginPortal()
 		mavenCentral()
 	}
 }

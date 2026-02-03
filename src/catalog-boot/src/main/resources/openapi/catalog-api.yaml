@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: Catalog API
+  version: 1.0.0
+
+paths:
+  /products:
+    post:
+      operationId: createProduct
+      summary: Create a product
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateProductRequest"
+      responses:
+        "201":
+          description: Product created
+
+components:
+  schemas:
+    CreateProductRequest:
+      type: object
+      required:
+        - name
+        - amount
+        - currency
+      properties:
+        name:
+          type: string
+        amount:
+          type: number
+          format: decimal
+        currency:
+          type: string

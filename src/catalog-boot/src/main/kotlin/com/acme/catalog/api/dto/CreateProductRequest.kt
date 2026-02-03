@@ -9,6 +9,7 @@ data class CreateProductRequest(
     val amount: BigDecimal,
     val currency: String
 ) {
+
     fun toCommand() =
         CreateProductCommand(
             name = name,
